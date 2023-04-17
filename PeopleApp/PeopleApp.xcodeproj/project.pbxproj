@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		527D512129ED7BD300E449F5 /* PeopleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D512029ED7BD300E449F5 /* PeopleAppApp.swift */; };
+		527D512529ED7BD600E449F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D512429ED7BD600E449F5 /* Assets.xcassets */; };
+		527D512829ED7BD600E449F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D512729ED7BD600E449F5 /* Preview Assets.xcassets */; };
+		527D513229ED7BD600E449F5 /* PeopleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D513129ED7BD600E449F5 /* PeopleAppTests.swift */; };
+		527D513C29ED7BD600E449F5 /* PeopleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D513B29ED7BD600E449F5 /* PeopleAppUITests.swift */; };
+		527D513E29ED7BD600E449F5 /* PeopleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D513D29ED7BD600E449F5 /* PeopleAppUITestsLaunchTests.swift */; };
+		527D515029ED7CF300E449F5 /* PeopleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D514F29ED7CF300E449F5 /* PeopleData.swift */; };
+		527D515229ED7D2300E449F5 /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515129ED7D2300E449F5 /* NetworkURL.swift */; };
+		527D515429ED7D7200E449F5 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515329ED7D7200E449F5 /* Fetchable.swift */; };
+		527D515629ED7D8B00E449F5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515529ED7D8B00E449F5 /* NetworkError.swift */; };
+		527D515829ED7DA400E449F5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515729ED7DA400E449F5 /* Networking.swift */; };
+		527D515A29ED7DBE00E449F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515929ED7DBE00E449F5 /* NetworkManager.swift */; };
+		527D515C29ED7DD900E449F5 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515B29ED7DD900E449F5 /* JsonParser.swift */; };
+		527D515E29ED7E0000E449F5 /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515D29ED7E0000E449F5 /* PeopleRepository.swift */; };
+		527D516029ED7E5400E449F5 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D515F29ED7E5400E449F5 /* PeopleListViewModel.swift */; };
+		527D516329ED7FA900E449F5 /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D516229ED7FA900E449F5 /* CacheAsyncImage.swift */; };
+		527D516529ED7FEB00E449F5 /* PeopleAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D516429ED7FEB00E449F5 /* PeopleAsyncImageView.swift */; };
+		527D516729ED804F00E449F5 /* PeopleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D516629ED804F00E449F5 /* PeopleCellView.swift */; };
+		527D516A29ED814300E449F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D516929ED814300E449F5 /* Constants.swift */; };
+		527D516C29ED81A900E449F5 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D516B29ED81A900E449F5 /* PeopleListView.swift */; };
+		527D516F29ED88DC00E449F5 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 527D516E29ED88DC00E449F5 /* people.json */; };
+		527D517229ED897200E449F5 /* PeopleListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517129ED897200E449F5 /* PeopleListViewModelTest.swift */; };
+		527D517429ED89D800E449F5 /* FakePeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517329ED89D800E449F5 /* FakePeopleRepository.swift */; };
+		527D517629ED8ABE00E449F5 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517529ED8ABE00E449F5 /* FakeNetworkManager.swift */; };
+		527D517829ED8D2E00E449F5 /* faile.json in Resources */ = {isa = PBXBuildFile; fileRef = 527D517729ED8D2E00E449F5 /* faile.json */; };
+		527D517A29ED8EEA00E449F5 /* PeopleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517929ED8EEA00E449F5 /* PeopleRepositoryTests.swift */; };
+		527D517C29ED970F00E449F5 /* NetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517B29ED970F00E449F5 /* NetworkingMock.swift */; };
+		527D517E29ED973E00E449F5 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517D29ED973E00E449F5 /* NetworkManagerTests.swift */; };
+		527D518029ED9BE700E449F5 /* PeopleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D517F29ED9BE700E449F5 /* PeopleDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		527D512E29ED7BD600E449F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 527D511529ED7BD300E449F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527D511C29ED7BD300E449F5;
+			remoteInfo = PeopleApp;
+		};
+		527D513829ED7BD600E449F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 527D511529ED7BD300E449F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527D511C29ED7BD300E449F5;
+			remoteInfo = PeopleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		527D511D29ED7BD300E449F5 /* PeopleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527D512029ED7BD300E449F5 /* PeopleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppApp.swift; sourceTree = "<group>"; };
+		527D512429ED7BD600E449F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		527D512729ED7BD600E449F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		527D512D29ED7BD600E449F5 /* PeopleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		527D513129ED7BD600E449F5 /* PeopleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppTests.swift; sourceTree = "<group>"; };
+		527D513729ED7BD600E449F5 /* PeopleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		527D513B29ED7BD600E449F5 /* PeopleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppUITests.swift; sourceTree = "<group>"; };
+		527D513D29ED7BD600E449F5 /* PeopleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		527D514F29ED7CF300E449F5 /* PeopleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleData.swift; sourceTree = "<group>"; };
+		527D515129ED7D2300E449F5 /* NetworkURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURL.swift; sourceTree = "<group>"; };
+		527D515329ED7D7200E449F5 /* Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
+		527D515529ED7D8B00E449F5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		527D515729ED7DA400E449F5 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		527D515929ED7DBE00E449F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		527D515B29ED7DD900E449F5 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		527D515D29ED7E0000E449F5 /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		527D515F29ED7E5400E449F5 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		527D516229ED7FA900E449F5 /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
+		527D516429ED7FEB00E449F5 /* PeopleAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAsyncImageView.swift; sourceTree = "<group>"; };
+		527D516629ED804F00E449F5 /* PeopleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCellView.swift; sourceTree = "<group>"; };
+		527D516929ED814300E449F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		527D516B29ED81A900E449F5 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		527D516E29ED88DC00E449F5 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		527D517129ED897200E449F5 /* PeopleListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModelTest.swift; sourceTree = "<group>"; };
+		527D517329ED89D800E449F5 /* FakePeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePeopleRepository.swift; sourceTree = "<group>"; };
+		527D517529ED8ABE00E449F5 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		527D517729ED8D2E00E449F5 /* faile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faile.json; sourceTree = "<group>"; };
+		527D517929ED8EEA00E449F5 /* PeopleRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepositoryTests.swift; sourceTree = "<group>"; };
+		527D517B29ED970F00E449F5 /* NetworkingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingMock.swift; sourceTree = "<group>"; };
+		527D517D29ED973E00E449F5 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		527D517F29ED9BE700E449F5 /* PeopleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527D511A29ED7BD300E449F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D512A29ED7BD600E449F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D513429ED7BD600E449F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		527D511429ED7BD300E449F5 = {
+			isa = PBXGroup;
+			children = (
+				527D511F29ED7BD300E449F5 /* PeopleApp */,
+				527D513029ED7BD600E449F5 /* PeopleAppTests */,
+				527D513A29ED7BD600E449F5 /* PeopleAppUITests */,
+				527D511E29ED7BD300E449F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		527D511E29ED7BD300E449F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527D511D29ED7BD300E449F5 /* PeopleApp.app */,
+				527D512D29ED7BD600E449F5 /* PeopleAppTests.xctest */,
+				527D513729ED7BD600E449F5 /* PeopleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527D511F29ED7BD300E449F5 /* PeopleApp */ = {
+			isa = PBXGroup;
+			children = (
+				527D516829ED812800E449F5 /* Preview */,
+				527D516129ED7F9500E449F5 /* CashedImage */,
+				527D514E29ED7C5D00E449F5 /* Repository */,
+				527D514D29ED7C5300E449F5 /* NetworkLayer */,
+				527D514C29ED7C4900E449F5 /* ViewModel */,
+				527D514B29ED7C4100E449F5 /* Model */,
+				527D514A29ED7C3500E449F5 /* Views */,
+				527D512029ED7BD300E449F5 /* PeopleAppApp.swift */,
+				527D512429ED7BD600E449F5 /* Assets.xcassets */,
+				527D512629ED7BD600E449F5 /* Preview Content */,
+			);
+			path = PeopleApp;
+			sourceTree = "<group>";
+		};
+		527D512629ED7BD600E449F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				527D512729ED7BD600E449F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		527D513029ED7BD600E449F5 /* PeopleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				527D517029ED893E00E449F5 /* ViewModelTest */,
+				527D516D29ED88BD00E449F5 /* json */,
+				527D513129ED7BD600E449F5 /* PeopleAppTests.swift */,
+				527D517529ED8ABE00E449F5 /* FakeNetworkManager.swift */,
+				527D517929ED8EEA00E449F5 /* PeopleRepositoryTests.swift */,
+				527D517B29ED970F00E449F5 /* NetworkingMock.swift */,
+				527D517D29ED973E00E449F5 /* NetworkManagerTests.swift */,
+			);
+			path = PeopleAppTests;
+			sourceTree = "<group>";
+		};
+		527D513A29ED7BD600E449F5 /* PeopleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				527D513B29ED7BD600E449F5 /* PeopleAppUITests.swift */,
+				527D513D29ED7BD600E449F5 /* PeopleAppUITestsLaunchTests.swift */,
+			);
+			path = PeopleAppUITests;
+			sourceTree = "<group>";
+		};
+		527D514A29ED7C3500E449F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				527D516429ED7FEB00E449F5 /* PeopleAsyncImageView.swift */,
+				527D516629ED804F00E449F5 /* PeopleCellView.swift */,
+				527D516B29ED81A900E449F5 /* PeopleListView.swift */,
+				527D517F29ED9BE700E449F5 /* PeopleDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		527D514B29ED7C4100E449F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				527D514F29ED7CF300E449F5 /* PeopleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		527D514C29ED7C4900E449F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				527D515F29ED7E5400E449F5 /* PeopleListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		527D514D29ED7C5300E449F5 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				527D515129ED7D2300E449F5 /* NetworkURL.swift */,
+				527D515329ED7D7200E449F5 /* Fetchable.swift */,
+				527D515529ED7D8B00E449F5 /* NetworkError.swift */,
+				527D515729ED7DA400E449F5 /* Networking.swift */,
+				527D515929ED7DBE00E449F5 /* NetworkManager.swift */,
+				527D515B29ED7DD900E449F5 /* JsonParser.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		527D514E29ED7C5D00E449F5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				527D515D29ED7E0000E449F5 /* PeopleRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		527D516129ED7F9500E449F5 /* CashedImage */ = {
+			isa = PBXGroup;
+			children = (
+				527D516229ED7FA900E449F5 /* CacheAsyncImage.swift */,
+			);
+			path = CashedImage;
+			sourceTree = "<group>";
+		};
+		527D516829ED812800E449F5 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				527D516929ED814300E449F5 /* Constants.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		527D516D29ED88BD00E449F5 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				527D516E29ED88DC00E449F5 /* people.json */,
+				527D517729ED8D2E00E449F5 /* faile.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		527D517029ED893E00E449F5 /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				527D517129ED897200E449F5 /* PeopleListViewModelTest.swift */,
+				527D517329ED89D800E449F5 /* FakePeopleRepository.swift */,
+			);
+			path = ViewModelTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527D511C29ED7BD300E449F5 /* PeopleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527D514129ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleApp" */;
+			buildPhases = (
+				527D511929ED7BD300E449F5 /* Sources */,
+				527D511A29ED7BD300E449F5 /* Frameworks */,
+				527D511B29ED7BD300E449F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeopleApp;
+			productName = PeopleApp;
+			productReference = 527D511D29ED7BD300E449F5 /* PeopleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		527D512C29ED7BD600E449F5 /* PeopleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527D514429ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */;
+			buildPhases = (
+				527D512929ED7BD600E449F5 /* Sources */,
+				527D512A29ED7BD600E449F5 /* Frameworks */,
+				527D512B29ED7BD600E449F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527D512F29ED7BD600E449F5 /* PBXTargetDependency */,
+			);
+			name = PeopleAppTests;
+			productName = PeopleAppTests;
+			productReference = 527D512D29ED7BD600E449F5 /* PeopleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		527D513629ED7BD600E449F5 /* PeopleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527D514729ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleAppUITests" */;
+			buildPhases = (
+				527D513329ED7BD600E449F5 /* Sources */,
+				527D513429ED7BD600E449F5 /* Frameworks */,
+				527D513529ED7BD600E449F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527D513929ED7BD600E449F5 /* PBXTargetDependency */,
+			);
+			name = PeopleAppUITests;
+			productName = PeopleAppUITests;
+			productReference = 527D513729ED7BD600E449F5 /* PeopleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		527D511529ED7BD300E449F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					527D511C29ED7BD300E449F5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					527D512C29ED7BD600E449F5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 527D511C29ED7BD300E449F5;
+					};
+					527D513629ED7BD600E449F5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 527D511C29ED7BD300E449F5;
+					};
+				};
+			};
+			buildConfigurationList = 527D511829ED7BD300E449F5 /* Build configuration list for PBXProject "PeopleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 527D511429ED7BD300E449F5;
+			productRefGroup = 527D511E29ED7BD300E449F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				527D511C29ED7BD300E449F5 /* PeopleApp */,
+				527D512C29ED7BD600E449F5 /* PeopleAppTests */,
+				527D513629ED7BD600E449F5 /* PeopleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527D511B29ED7BD300E449F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D512829ED7BD600E449F5 /* Preview Assets.xcassets in Resources */,
+				527D512529ED7BD600E449F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D512B29ED7BD600E449F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D516F29ED88DC00E449F5 /* people.json in Resources */,
+				527D517829ED8D2E00E449F5 /* faile.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D513529ED7BD600E449F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527D511929ED7BD300E449F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D515229ED7D2300E449F5 /* NetworkURL.swift in Sources */,
+				527D515E29ED7E0000E449F5 /* PeopleRepository.swift in Sources */,
+				527D516729ED804F00E449F5 /* PeopleCellView.swift in Sources */,
+				527D512129ED7BD300E449F5 /* PeopleAppApp.swift in Sources */,
+				527D516A29ED814300E449F5 /* Constants.swift in Sources */,
+				527D515629ED7D8B00E449F5 /* NetworkError.swift in Sources */,
+				527D516329ED7FA900E449F5 /* CacheAsyncImage.swift in Sources */,
+				527D515A29ED7DBE00E449F5 /* NetworkManager.swift in Sources */,
+				527D518029ED9BE700E449F5 /* PeopleDetailsView.swift in Sources */,
+				527D516029ED7E5400E449F5 /* PeopleListViewModel.swift in Sources */,
+				527D515429ED7D7200E449F5 /* Fetchable.swift in Sources */,
+				527D516C29ED81A900E449F5 /* PeopleListView.swift in Sources */,
+				527D515029ED7CF300E449F5 /* PeopleData.swift in Sources */,
+				527D516529ED7FEB00E449F5 /* PeopleAsyncImageView.swift in Sources */,
+				527D515829ED7DA400E449F5 /* Networking.swift in Sources */,
+				527D515C29ED7DD900E449F5 /* JsonParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D512929ED7BD600E449F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D517429ED89D800E449F5 /* FakePeopleRepository.swift in Sources */,
+				527D517A29ED8EEA00E449F5 /* PeopleRepositoryTests.swift in Sources */,
+				527D513229ED7BD600E449F5 /* PeopleAppTests.swift in Sources */,
+				527D517229ED897200E449F5 /* PeopleListViewModelTest.swift in Sources */,
+				527D517E29ED973E00E449F5 /* NetworkManagerTests.swift in Sources */,
+				527D517629ED8ABE00E449F5 /* FakeNetworkManager.swift in Sources */,
+				527D517C29ED970F00E449F5 /* NetworkingMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527D513329ED7BD600E449F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527D513C29ED7BD600E449F5 /* PeopleAppUITests.swift in Sources */,
+				527D513E29ED7BD600E449F5 /* PeopleAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		527D512F29ED7BD600E449F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527D511C29ED7BD300E449F5 /* PeopleApp */;
+			targetProxy = 527D512E29ED7BD600E449F5 /* PBXContainerItemProxy */;
+		};
+		527D513929ED7BD600E449F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527D511C29ED7BD300E449F5 /* PeopleApp */;
+			targetProxy = 527D513829ED7BD600E449F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		527D513F29ED7BD600E449F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		527D514029ED7BD600E449F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		527D514229ED7BD600E449F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeopleApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		527D514329ED7BD600E449F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PeopleApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		527D514529ED7BD600E449F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeopleApp";
+			};
+			name = Debug;
+		};
+		527D514629ED7BD600E449F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PeopleApp";
+			};
+			name = Release;
+		};
+		527D514829ED7BD600E449F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleApp;
+			};
+			name = Debug;
+		};
+		527D514929ED7BD600E449F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Swift.PeopleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527D511829ED7BD300E449F5 /* Build configuration list for PBXProject "PeopleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527D513F29ED7BD600E449F5 /* Debug */,
+				527D514029ED7BD600E449F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527D514129ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527D514229ED7BD600E449F5 /* Debug */,
+				527D514329ED7BD600E449F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527D514429ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527D514529ED7BD600E449F5 /* Debug */,
+				527D514629ED7BD600E449F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527D514729ED7BD600E449F5 /* Build configuration list for PBXNativeTarget "PeopleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527D514829ED7BD600E449F5 /* Debug */,
+				527D514929ED7BD600E449F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 527D511529ED7BD300E449F5 /* Project object */;
+}
